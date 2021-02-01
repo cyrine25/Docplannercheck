@@ -1,0 +1,657 @@
+html{
+    font-family: roboto;
+  font-size: 16px;
+  color:rgb(116, 116, 116) ;
+}
+body{
+  margin: 0px;
+  position: relative;
+  
+}
+ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    display: block;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: block;
+    color: rgb(116, 116, 116);
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+li a:hover, .dropdown:hover .dropbtn {
+    color: rgb(0, 179, 155);
+    }
+    li.dropdown {
+        display:block;
+        
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        width: 220px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color:rgb(116, 116, 116);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        width: 200px;
+      }
+   
+      
+      .dropdown-content a:hover {background-color: #fcfcfc;}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      header{
+       height:70px;
+       width: 100%;
+          box-shadow: 0 -5px 10px 0 rgba(0,0,0,.15);
+         margin: 0px;
+         padding: 0px;
+         position: relative;
+      }
+      .nav{
+          display: flex;
+          position: fixed;
+          justify-content: space-between;
+          transition-property: box-shadow;
+          z-index: 3;
+          background: rgba(255, 255, 255, 0.98);
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+      }
+    .nav div{
+          width: 400px;
+          display: inline-flexbox;
+          justify-content: space-betweens;
+          margin-left: 180px;
+          margin-right: 80px;
+          margin-top: 0px;
+          
+      }
+      .pos{
+          width: 400px; 
+          
+      }
+      .section1{
+          margin-top: 0px;
+   padding-top: 100px;
+   text-align: center;
+   
+      }
+      .section1 h1{
+          font-size: 34px;
+          color: rgb(0, 179, 155);
+         font-weight:300;
+          font-family: roboto;
+        
+          
+      }
+      .division{
+         display: block;
+         justify-content: space-around;
+         padding-top: 20px;
+         margin: 0px 180px;
+         color: rgb(116, 116, 116);
+      }
+      .col1 {
+          width: 48%;
+          float: left;
+          text-align: left;
+          font-family: roboto;
+          line-height: 1.75;
+          font-weight: 400;
+      }
+      .col2{
+          width: 48%;
+          float: right;
+          text-align: left;
+          font-family: roboto;
+          line-height: 1.75;
+          font-weight: 400;
+      }
+      .section2{
+        margin: 200px auto 40px;
+        position: relative;
+      }
+     .big{
+       display: flex;
+       margin-left: 180px;
+          margin-right: 180px;
+          justify-content: space-between;
+     }
+     .patient{
+      padding: 10px;
+      width: 33.33%;
+      margin-right: 10px;
+       background-color:#00ccb1;
+       border-radius: 10px;
+    height: 330px;
+    display: flex;
+    justify-content: space-between;
+    transition: all .2s ease 0s;
+     }
+     .pat{
+      padding-top: 1.375em;
+      padding-right: 1.25em;
+      padding-bottom: 0px;
+      padding-left: 1.25em;
+      color: white;
+     }
+     .pat h1{
+       font-family:Roboto;
+        font-weight: 300;
+        font-size: 28px;
+     }
+     .pat h2{
+      font-family:Roboto;
+      font-weight: 300;
+      font-size: 24px;
+     }
+     .doctors{
+      padding: 10px;
+      width: 33.33%;
+      margin: 0px 10px;
+      height: 330px;
+      border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    transition: all .2s ease 0s;
+      background-color: #3d83df;
+     }
+     .doc{
+      padding-top: 1.375em;
+      padding-right: 1.25em;
+      padding-bottom: 0px;
+      padding-left: 1.25em;
+      color: white;
+     }
+     .doc h1{
+      
+      font-family:Roboto;
+       font-weight: 300;
+       font-size: 28px;
+    }
+    .doc h2{
+     font-family:Roboto;
+     font-weight: 300;
+     font-size: 24px;
+    }
+
+     .clinics{
+      padding: 10px;
+      width: 33.33%;
+      margin-left: 10px;
+background-color: #1b2734;
+height: 330px;
+      border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    transition: all .2s ease 0s;
+     }
+     .cli{
+      padding-top: 1.375em;
+      padding-right: 1.25em;
+      padding-bottom: 0px;
+      padding-left: 1.25em;
+      color: white;
+     }
+     .cli h1{
+      font-family:Roboto;
+       font-weight: 300;
+       font-size: 28px;
+    }
+    .cli h2{
+     font-family:Roboto;
+     font-weight: 300;
+     font-size: 24px;
+    }
+   
+    #domaine-switcher{
+      margin-top: 20px;
+      background: transparent;
+      color: white;
+      font-family: roboto;
+      font-weight: 300;
+      font-size: 19px;
+     border: 0;
+    }
+    #doc-switcher{
+      margin-top: 20px;
+      background: transparent;
+      color: white;
+      font-family: roboto;
+      font-weight: 300;
+      font-size: 19px;
+     border: 0;}
+    #sp-switcher{
+      margin-top: 20px;
+      background: transparent;
+      color: white;
+      font-family: roboto;
+      font-weight: 300;
+      font-size: 19px;
+     border: 0;
+    }
+    #more-switcher{
+      background: transparent;
+      color: white;
+      font-family: roboto;
+      font-weight: 300;
+      font-size: 19px;
+     border: 0;
+    }
+    .many{
+      
+      position: relative;
+      margin-left: 180px;
+      margin-right: 110px;
+      margin-top: 60px;
+      display: flex;
+    
+    }
+    .many h3{
+      float: left;
+      font-size: 30px;
+      font-weight: 300;
+      font-family: roboto;
+      color:#00ccb1 ;
+      padding:0px 20px;
+      margin-top: 10px;
+    }
+  .section3{
+background-color: #d6f1ef;
+display: flex;
+position: relative;
+height: 580px;
+
+  }
+  .all{
+    display: flex;
+    position: relative;
+    margin: 0px 160px;
+    padding: 0px 20px;
+    flex-direction: column;
+    background-image: url("logo.png") ;
+    background-repeat: no-repeat;
+    background-position-y: 260px;
+  }
+  .first{
+float: left;
+width: 37%;
+margin-top: 25px;
+
+
+  }
+  .first h1{
+    color: #00b39b;
+
+    font-size: 34px;
+    font-family: roboto;
+    font-weight: 300;
+  }
+  .first p{
+    
+    
+    font-size: 12px;
+    font-family: roboto;
+    font-weight: 400;
+   margin: 29px;
+   margin-left: 0px;
+   
+  }
+  .four{
+  
+   display: flex;
+   width: 55%;
+   float: right;
+   
+    
+    padding-left: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .cell1{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.05);
+display: flex;
+flex-direction: column;
+    justify-content: center;
+    height: 240px;
+    width: 40%;
+    border-radius: 6px;
+    margin-left: 20px;
+margin-top: 30px;
+color: #fff;
+  }
+  .tablecell{
+    justify-content: center;
+    
+  padding-top: 30px;
+    text-align: center;
+    line-height: 20px;
+  }
+  .tablecell h3{
+    margin-top: 10px;
+    color: rgb(0, 179, 155);
+   font-family:roboto;
+   font-weight: 300;
+   font-size: 23px;
+   text-align: center;
+  }
+.tablecell p{
+  color: rgb(116, 116, 116);
+  font-family: roboto;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.cell2{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.05);
+display: flex;
+flex-direction: column;
+  justify-content: center;
+  height: 240px;
+  width: 40%;
+  border-radius: 6px;
+margin-top: 50px;
+margin-left: 0px;
+margin-right: 30px;
+color: #fff;
+}
+.tablecell2{
+  justify-content: center;
+ 
+padding-top: 30px;
+  text-align: center;
+  line-height: 20px;
+}
+.tablecell2 h3{
+  margin-top: 10px;
+  color: rgb(0, 179, 155);
+ font-family:roboto;
+ font-weight: 300;
+ font-size: 23px;
+ text-align: center;
+}
+.tablecell2 p{
+color: rgb(116, 116, 116);
+font-family: roboto;
+font-size: 12px;
+line-height: 20px;
+}
+
+.cell4{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.05);
+display: flex;
+flex-direction: column;
+  justify-content: center;
+  height: 240px;
+  width: 40%;
+  border-radius: 6px;
+  margin-right: 30px;
+margin-top: 20px;
+color: #fff;
+}
+.tablecell4{
+  justify-content: center;
+  
+padding-top: 30px;
+  text-align: center;
+  line-height: 20px;
+}
+.tablecell4 h3{
+  margin-top: 10px;
+  color: rgb(0, 179, 155);
+ font-family:roboto;
+ font-weight: 300;
+ font-size: 23px;
+ text-align: center;
+}
+.tablecell4 p{
+color: rgb(116, 116, 116);
+font-family: roboto;
+font-size: 12px;
+line-height: 20px;
+}
+
+.cell3{
+background-color: rgb(255, 255, 255);
+box-shadow: 0 4px 4px 0 rgba(0,0,0,.05);
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 240px;
+width: 40%;
+border-radius: 6px;
+margin-top: 0px;
+margin-left: 20px;
+margin-right: 0px;
+color: #fff;
+}
+.tablecell3{
+justify-content: center;
+
+padding-top: 30px;
+text-align: center;
+line-height: 20px;
+}
+.tablecell3 h3{
+margin-top: 10px;
+color: rgb(0, 179, 155);
+font-family:roboto;
+font-weight: 300;
+font-size: 25px;
+text-align: center;
+}
+.tablecell3 p{
+color: rgb(116, 116, 116);
+font-family: roboto;
+font-size: 12px;
+line-height: 20px;
+}
+.section4{
+ 
+margin-left: 400px;
+ width: 500px;
+ position: relative;
+}
+.section4 h1{
+  color: #00b39b;
+text-align: center;
+  font-size: 34px;
+  font-family: roboto;
+  font-weight: 300;
+}
+.section4 p{
+  
+  text-align: center;
+  font-size: 14px;
+  font-family: roboto;
+  font-weight: 400;
+  line-height: 25px;
+ margin: 29px;
+ margin-left: 0px;
+ 
+}
+.section5{
+
+  display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin:80px 180px;
+}
+.warsaw{
+  height: 350px;
+ margin-bottom: 20px;
+overflow: hidden;
+border-radius: 6px;
+}
+
+.warsaw div{
+  margin: 10px;
+}
+.barcelona{
+  height: 350px;
+ margin-bottom: 20px;
+overflow: hidden;
+border-radius: 6px;
+}
+.barcelona div{
+  margin: 10px;
+}
+.istanbul{
+  height: 350px;
+ margin-bottom: 20px;
+overflow: hidden;
+border-radius: 6px;
+}
+.istanbul div{
+  margin: 10px;
+}
+.rome{
+  height: 350px;
+ margin-bottom: 20px;
+overflow: hidden;
+border-radius: 6px;
+}
+.rome div{
+  margin: 10px;
+}
+.bologna{
+  height: 350px;
+ margin-bottom: 20px;
+overflow: hidden;
+border-radius: 6px;
+}
+.bologna div{
+  margin: 10px;
+}
+.curitiba{
+  height: 350px;
+ margin-bottom: 20px;
+overflow: hidden;
+border-radius: 6px;
+}
+.curitiba div{
+  margin: 10px;
+}
+.mexico{
+  height: 350px;
+ margin-bottom: 20px;
+overflow: hidden;
+border-radius: 6px;
+}
+.mexico div{
+  margin: 10px;
+}
+.warsaw:hover{
+  box-shadow: 0px 5px 10px 0px rgb(201, 201, 201);
+  border-radius: 6px;
+}
+.barcelona:hover{
+  box-shadow: 0px 5px 10px 0px rgb(201, 201, 201);
+  border-radius: 6px;
+}
+.istanbul:hover{
+  box-shadow: 0px 5px 10px 0px rgb(201, 201, 201);
+  border-radius: 6px;
+}
+.rome:hover{
+  box-shadow: 0px 5px 10px 0px rgb(201, 201, 201);
+  border-radius: 6px;
+}
+.bologna:hover{
+  box-shadow: 0px 5px 10px 0px rgb(201, 201, 201);
+  border-radius: 6px;
+}
+.curitiba:hover{
+  box-shadow: 0px 5px 10px 0px rgb(201, 201, 201);
+  border-radius: 6px;
+}
+.mexico:hover{
+  box-shadow: 0px 5px 10px 0px rgb(201, 201, 201);
+  border-radius: 6px;
+}
+span{
+   float: right;
+   font-size: 14px;
+   
+    
+    position: relative;
+    border-radius: 4px;
+    background: #3d83df;
+    font-family: roboto;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px 16px;
+   
+   text-align: center;
+   box-sizing: content-box;
+}
+.diva{
+  color: rgb(116, 116, 116);
+  font-size: 20px;
+  display: block;
+  text-decoration: none;
+  background: #ffffff;
+}
+
+.join{
+  margin-top: 0px;
+  text-align: center;
+}
+.join a{
+  font-size: 14px;
+    position: relative;
+    border-radius: 4px;
+    background: #3d83df;
+    font-family: roboto;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px 16px;
+   text-decoration: none;
+   box-sizing: border-box;
+}
+.join h1{
+  font-size: 30px;
+  font-family: roboto;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.671);
+  text-align: center;
+}
+footer{
+margin-top: 120px;
+margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 26px;
+  text-align: center;
+ color: lightslategrey;
+  border-top-width: 1px;
+  border-top-color: rgba(0, 0, 0, 0.068);
+  border-top-style:solid;
+}
+footer a{
+  text-decoration: none;
+}
+
